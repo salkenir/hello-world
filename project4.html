@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appflow Redesign Project</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+         @font-face {
+        font-family: 'Magilio';
+        src: url('MagilioRegular-Yzv2O.ttf');
+    }
+         html, body {
+            margin:0;
+        }
+        .panel1 {
+            display:grid;
+            grid-template-columns:1fr;
+            background-image:url(images/main2.png);
+            background-size:cover;
+            height:900px;
+            text-align:center;
+        }
+        .projectline {
+            font-family: 'magilio', Arial, Helvetica, sans-serif;
+            font-size:80px;
+            color:rgb(37, 39, 43);
+            padding-top:30px;
+        }
+        .panel2 {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            background-color:#f2eee8;
+            height:550px;
+            text-align:center;
+            padding-top:55px;
+        }
+        .panel2-item2 {
+            padding:40px;
+        }
+        .panel3 {
+            display:grid;
+            grid-template-columns:1fr;
+            background-color:white;
+            height:200px;
+            text-align:center;
+            padding-left:20px;
+            padding:20px;
+        }
+        .panel4 {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            background-color:#f2eee8;
+            height:500px;
+            padding: 25px;
+        }
+        .panel4-item1 {
+            padding-top:20px;
+        }
+        .panel4-item2 {
+            display: grid;
+            justify-content: center;  
+            padding-top: 20px;  
+        }
+        .panel5 {
+            display:grid;
+            grid-template-columns:1fr;
+            background-color:white;
+            height:550px;
+            text-align:center;
+            padding:30px;
+            margin-top:-200px;
+            margin-bottom:160px;
+        }
+        .panel5-item1 {
+            padding:10px;
+           
+        }
+        .panel5-item2 {
+            padding:40px;
+        }
+        .panel6 {
+            display:grid;
+            grid-template-columns:1fr ;
+            background-color:white;
+            height:1000px;
+            text-align:center;  
+            margin-top: -180px;
+        }
+        .panel6-item2 {
+            margin-top: -200px;
+        }
+
+        h1 {
+        font-family:'magilio';
+        font-size:25px;
+         text-align: left;
+         padding-left:20px;  
+        }
+        h2 {
+            font-family: 'magilio';
+            font-size:25px; 
+            padding:0 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        header {
+            height:80px;
+            background-color:#f2eee8;
+        }
+        .phones {
+            
+            background-color: white;
+           
+        }
+        p {
+            font-family:Arial, Helvetica, sans-serif;
+            line-height:2;
+            text-align:left;
+            padding:20px;
+           
+        }
+        img {
+        max-width:100%;
+        height:400px;
+        }
+      
+        .panel7 {
+            display:grid;
+            grid-template-columns:1fr;
+            background-color:white;
+            height:13px;
+            padding: 20px;
+            text-align:center; 
+        }
+        .panel8 {
+            display:grid;
+            grid-template-columns: 1fr;
+            margin-left:120px;
+            margin-top:-200px;
+        }
+        
+        .panel9 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding:20px;
+            text-align: center;
+            background-color: #f2eee8;
+            margin-top: -200px;
+        }
+        .panel10 {
+            text-align: center;
+            font-family: 'magilio';
+            height:300px;
+            padding:60px;
+            margin-top: -50px;
+            background-color: white;
+        }
+        .panel11 {
+            display:grid;
+            grid-template-columns: 1fr;
+            padding:60px;
+            background-image: url(images/personas.png);
+            background-size: cover;
+            height:600px;
+        }
+        .panel11-item2 {
+            margin-top: -280px;
+        }
+        .panel12 {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            background-color:#f2eee8;
+            height:800px;
+            padding:25px;
+        }
+        .panel12-item1 {
+            display:grid;
+            justify-content: center;
+        }
+        .panel13 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        
+        }
+        .panel13-item1 {
+            display: grid;
+            justify-content: center;
+            padding:30px;
+        }
+        .panel14-item1 {
+            padding:60px;
+            display:grid;
+            grid-template-columns: 1fr; justify-content:center;
+        }
+        .panel15 {
+            display:grid;
+            grid-template-columns: 1fr 1fr ;
+        }
+        .panel15-item1 {
+            padding:60px;
+        }
+        .panel15-item2 {
+            padding:60px;
+        }
+        .panel16 {
+            display:grid;
+            grid-template-columns: 1fr 1fr ;
+        }
+        .panel16-item1 {
+            display:grid;
+            justify-content: center;
+        }
+        .panel17 {
+            padding:60px;
+        }
+      .panel18 {
+          display:grid;
+          grid-template-columns: 1fr 1fr;
+          height:1000px;
+      }
+      .panel18-item1 {
+          background-image:url(images/newcanvas1.png);
+          background-size:cover ;
+          height:1000px;
+          display: grid;
+          padding:60px;
+      }
+      .panel18-item2 {
+          background-image:url(images/newcanvas.png);
+          background-size:cover ;
+      }
+      .panel19 {
+          height:300px;
+          padding-top:100px;
+      }
+      .panel20 {
+          padding:60px;
+      }
+      .panel20-item1 {
+          display:grid;
+          justify-content: center;
+      }
+      .panel21 {
+          display:grid;
+          justify-content: center;
+          height:700px;
+      }
+        #back2Top {
+    width:30px; /* width of button */
+    height:20px; /* height of button */
+    line-height:30px;
+    overflow:hidden;
+    z-index:999;
+    display:none; /* initially not displayed */
+    cursor:pointer;
+    transform:rotate(270deg); /* turns right arrow 270 degrees */
+    position:fixed; /* fixed at bottom corner */
+    bottom:30px; /* distance from bottom */
+    right:40px; /* distance from right */
+    padding:4px 4px 13px 4px; /* padding around arrow */
+    border:2px solid white;
+    border-radius:2px;
+    background:rgba(240, 215, 201, 0.7); /* blue background with transparency */
+    color:#BD9A7A; /* color of arrow */
+    text-align:center;
+    font-size:20px; /* size of the arrow */
+    text-decoration:none;
+    }
+    #back2Top:link {
+    background:rgba(189, 154, 122, 0.9);
+    color:white;
+    }
+    #back2Top:visited {
+    background:rgba(189, 154, 122, 0.9);
+    color:#eee;
+    }
+    #back2Top:hover {
+    background:rgba(189, 154, 122, 0.9);
+    color:rgb(37, 39, 43);
+    }
+    #back2Top:active {
+    background:rgba(189, 154, 122, 0.9);
+    color:#eee;
+    }
+            @media only screen and (min-width:680px) {
+            .panel9 {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            } 
+            .panel8 {
+                margin-left:300px;
+                margin-top: 0;
+            }
+            .panel6 {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                height:300px;
+                margin-top:100px;
+                
+            }
+            
+            .panel11 {
+                display:grid;
+                grid-template-columns: 1fr ;
+                height:700px;
+            }
+            .panel11-item2 {
+                margin-top:-40px;
+            }
+            img {
+                max-width:100%;
+            }
+            .panel5 {
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                background-color:white;
+                height:550px;
+                text-align:center;
+                padding:30px;
+                margin-top:-600px;
+                margin-bottom: 70px;
+            }
+            .panel4 {
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                height:400px;
+            }
+           
+            }
+            @media only screen and (min-width:900px) {
+            .panel12 {
+                height:500px;
+            }
+            .panel12-item1 {
+                display:grid;
+                justify-content:center;
+            }
+            .panel11 {
+                height:800px;
+            }
+            .panel15-item2 {
+                display: grid;
+                justify-content: center;
+            }
+            .panel19 {
+                padding:60px;
+            }
+        .panel3-item1 {
+            display:grid;
+            justify-content: center;
+        }
+    }
+        </style>
+    </head>
+    <div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+
+    <script>
+    /* Scroll to top when arrow up clicked BEGIN */
+    $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+    $('#back2Top').fadeIn();
+    } else {
+    $('#back2Top').fadeOut();
+    }
+    });
+    $(document).ready(function() {
+    $("#back2Top").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+    });
+
+    });
+    /* Scroll to top when arrow up clicked END */ 
+</script>
+    <header>
+        
+        <div class="letteri">
+            <a href="homepage.html">
+          <img src="images/letteri.png" alt="letter" style="height:80px; padding-left: 30px;" >  </a>   
+        </div>
+     
+    </header>
+    <div class="panel1" >
+        <div class="projectline" >
+         Canvas App Redesign 
+        </div>
+    </div>
+    <div class="panel2">
+        <div class="panel2-item1">
+            <h1>Introduction</h1>
+            <p>When I was considering an app I use every day that could use design improvements, my mind went to Instagram, amazon, then school. I know many college students, specifically at JMU, use Canvas every day for classes. School is a big part of all of our daily lives as college students. The apps we use to organize and manage all the different information for each class are important when it comes to staying on top of work and keeping good grades. 
+            </p>
+        </div>
+        <div class="panel2-item2">
+            <p>Before I even knew about this assignment I had already thought about ways the canvas app could be fixed. I wanted to work with an app that would be relevant to my classmates and friends, which led me to choose Canvas as the app I will be improving a feature for. </p>
+           
+        </div>
+    </div>
+    <div class="panel3">
+        <div class="panel3-item1">
+        <h2> Design Question </h2>
+        <p>How might the canvas app be redesigned to allow students to easily access their classes and schedule?</p></div>
+    </div>
+    <div class="panel4">
+        <div class="panel4-item1">
+            <h1>Major Pain Points</h1>
+            <p> 1. My first focus for this project was improving the sidebar navigation on the canvas app and website. The app is currently set up so that when you click the sidebar you are presented with different options, but none of them are truly “useful”. I find myself clicking that sidebar when I want to get back to my dashboard, which is where classes are displayed.</p> 
+            </div>
+            <div class="panel4-item2">
+            <img src="images/oldcanvas.png" alt="oldcanvas">    
+            </div>
+    </div> 
+    <div class="panel12">
+        <div class="panel12-item1">
+            <img src="images/oldcanvas2.png" alt="oldcanvas2"> 
+        </div>
+        <div class="panel12-item2">
+           <p>
+                2. The next pain point I wanted to focus on was the way the app lacks a scheduling feature. Students can see their classes on the dashboard but important things like class times and room numbers aren’t featured on the app. When I want to see my class schedule that lists those things I have to go to Mymadison which has more steps involved and is only available in a web browser.
+        
+               </p>  
+        </div>
+    </div>
+    <div class="panel10">
+        <h1>The Users</h1>
+        <p>Canvas users consist of students and teachers in universities and colleges across the U.S, some high schools even use Canvas as well. The users I will be focusing on for this project will be college-aged students ranging from ages 18 to 22. These users will be people who use Canvas roughly every day for school and all are full-time students with pretty busy schedules. 
+        </p>
+    </div>
+    <div class="panel11">
+        </div>
+       
+  <div class="panel14">
+      <div class="panel14-item1">
+      <h1>User Research</h1>
+      <p>I conducted my user research through online surveys that I distributed virtually to 19 people that go to JMU ranging from freshmen who are new to the app to 5th years with more experience using Canvas. 
+    </p>
+</div>
+  </div>
+  <div class="panel13">
+   <div class="panel13-item1">
+       <img src="images/graph1.jpg" alt="piegraph">
+   </div> 
+   <div class="panel13-item2">
+       <p>I wanted to start my research by determining how often students are using the Canvas app in their everyday routine. As I suspected, nearly every one of my participants answered yes when asked if they use canvas for all of their classes. This confirmed the idea that Canvas was basically essential to college student’s everyday routines. This makes it even more important for the app to be as user friendly as possible.
+
+       </p>
+   </div>  
+  </div>
+  <div class="panel15">
+      <div class="panel15-item1">
+          <p>I was curious what features students were using the most on the Canvas app. 85% of my survey participants said they used the dashboard feature the most and 15% said they used the to do list more. The dashboard feature shows each class the student is enrolled in. I also use this feature the most, clicking back to see the list of classes I have to choose from. The to do list is also useful and important because it is the closest thing canvas has to the schedule concept I want to create for the app. The issue with both the to do list and the dashboard features is that class times are not displayed or teacher names and class room numbers. This is important to note because multiple of my participants mentioned wanting to see their class times or some sort of schedule when I asked what features they would like to see on the app. </p>
+      </div>
+      <div class="panel15-item2">
+          <img src="images/graph2.jpg" alt="linegraph">
+      </div>   
+      </div>   
+      <div class="panel16">
+      <div class="panel16-item1">
+       <img src="images/feedback.jpg" alt="feedback">
+      </div>
+      <div class="panel16-item2">
+          <p>The last question of the survey I left open for the participants to write in a feature they would like to see on the Canvas app. I found a common trend in all the responses were involving scheduling and class times. I was suprised and pleased to see more people than I thought had interest in the schedule feature and class times.
+            </p>
+      </div>   
+      </div>  
+      <div class="panel17">
+        <h1>My Redesign</h1>
+        <p>For my redesign of the sidebar I wanted to keep most of the old components but add the clickable list of classes. Having the classes in the sidebar solves the issue of having to click through all of your previous pages to get back to another class. Now the user can click the sidebar to access essentially a smaller version of the dashboard. I moved the settings button to the upper right corner of the sidebar. I added a schedule button near the bottom where the user can access the schedule page I created. The schedule page will be similar to the feature on Mymadison. The user would be able to see a timed schedule for each day of the week that displays times, location, and class name. 
+</p> <br>
+<p>The original canvas bottom navigation only had the icons from the calendar over, so I decided to add the schedule icon there as well. It fit in perfectly, and I think it helps tell the user the schedule and calendar are different. I would keep canvas’s calendar feature the same, as it only lists things that show in the to do list. The schedule section would be different because it only shows what class is happening at what time. </p>
+        </div> 
+        <div class="panel21">
+            <h2> User Flow</h2>
+            <img src="images/userflow.jpg" alt="userflow">
+            </div>
+        <div class="panel20">
+            <h2> Wire Frames</h2>
+            <div class="panel20-item1">
+                <img src="images/wireframes.png" alt="wireframes">
+                </div>
+            </div>
+        <div class="panel18">
+            
+            <div class="panel18-item1">
+                <h1>Final Redesign Mockups</h1>
+                <p></p>
+                </div>
+                <div class="panel18-item2">
+                    <p></p>
+                    </div>
+            </div>
+            <div class="panel19">
+                <h1>Conclusion</h1>
+                <p>After doing some user research i quickly realized other students felt the same way i did about the canvas app. Generally most students think the app is just “ok”. I was surprised at how many other students also valued the class times being displayed as well as the locations. It was interesting to see others share the same pain points as me within the app. I was happy with the results i got from surveying various students and how my app redesign turned out. I think the simple changes to the sidebar make a huge difference in usability and convenience. </p>
+                </div>
+</body>
+</html>
